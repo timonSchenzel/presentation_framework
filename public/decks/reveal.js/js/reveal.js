@@ -1562,6 +1562,9 @@ var Reveal = (function(){
 		document.getElementById('reveal-presentation').setAttribute('color-theme', color);
 	}
 
+	function updateBorder( color ) {
+		document.getElementById('reveal-presentation').setAttribute('border-theme', color);
+	}
 
 	// --------------------------------------------------------------------//
 	// ------------------------------- API --------------------------------//
@@ -1597,6 +1600,7 @@ var Reveal = (function(){
 		togglePause: togglePause,
 
 		updateBackground: updateBackground,
+		updateBorder: updateBorder,
 
 		// Adds or removes all internal event listeners (such as keyboard)
 		addEventListeners: addEventListeners,

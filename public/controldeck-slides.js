@@ -28,6 +28,8 @@ function updateReveal(message) {
     else if (message === 'goto:0')  Reveal.slide(0,0);
     else if (message === 'background:blue')  Reveal.updateBackground('blue');
     else if (message === 'background:red')  Reveal.updateBackground('red');
+    else if (message === 'border:blue')  Reveal.updateBorder('blue');
+    else if (message === 'border:red')  Reveal.updateBorder('red');
 }
 function updateImpress(message) {
     console.log('updateImpress '+message);
